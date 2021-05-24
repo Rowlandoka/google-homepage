@@ -89,30 +89,43 @@ li a:hover {
 }
 
 footer{
-  background-color:#f2f2f2;
+  background-color: #eeeeee;
+  width: 100%;
   position: fixed;
   padding: 5px;
-  width:100% ;
   bottom: 0;
 }
+ 
+ nav{
+   display: flex;
+   width: 100%;
+   height: 50px;
+   align-items: center;
+ }
+ nav div:nth-child(1){
+   justify-content: flex-start;
+ }
 
-footer nav{
-  display: flex;
-  width: 100%;
-  height: 50px;
-  align-items: center;
+
+nav div:nth-child(2){
+  justify-content: flex-end;
+  margin-right: 4px;
 }
 
  nav div{
-  display: flex;
-  align-items: center;
-  width: 50%;
-  padding: 10px;
-}
+   display: flex;
+   width: 50%;
+   padding: 10px;
+ }
 
-nav div a{
-  text-decoration: none;
+ nav div a {
   padding: 10px;
+  white-space: nowrap;
+  text-decoration: none;
   color: #3b3b3b;
-}
+ }
+
+ nav div a:hover{
+   text-decoration: underline;
+ }
 
